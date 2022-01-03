@@ -9,7 +9,7 @@
           <svg-icon class="bilibili" icon-class="bilibili" style="float:right;margin-left:10px" @click="gotoBiliBili" />
           <svg-icon class="youguan" icon-class="youtube" style="float:right;margin-left:10px" @click="gotoYouTuBe" />
           <svg-icon class="channel" icon-class="telegram" style="float:right;margin-left: 10px" @click="gotoTgChannel" />
-          <div style="text-align:center;font-size:15px">订 阅 转 换</div>
+          <div style="text-align:center;font-size:15px">大 锤 订 阅 转 换</div>
           </div>
           
           <el-container>
@@ -310,7 +310,7 @@ export default {
          "d1.mk":"https://d1.mk/short",
          "dlj.tf":"https://dlj.tf/short",
          "suo.yt":"https://suo.yt/short",
-         "sub.cm":"https://sub.cm/short",
+         "大锤短链接":"https://xgogo.in/url",
         },
         customBackend: {
           "肥羊增强型后端【负载均衡】":"https://api.v1.mk/sub?",
@@ -318,7 +318,7 @@ export default {
           "nameless13提供":"https://www.nameless13.com/sub?",
           "subconverter作者提供":"https://subcon.dlj.tf/sub?",
           "sub作者&lhie1提供": "https://api.dler.io/sub?",
-          "品云提供": "https://sub.id9.cc/sub?",
+          "大锤后端": "https://suc.x-clash.gq/sub?",
         },
         backendOptions: [
           { value: "https://api.v1.mk/sub?" },
@@ -326,7 +326,7 @@ export default {
           { value: "https://www.nameless13.com/sub?" },
           { value: "https://sub.xeton.dev/sub?" },
           { value: "https://api.dler.io/sub?" },
-          { value: "https://sub.id9.cc/sub?" },
+          { value: "https://suc.x-clash.gq/sub?" },
         ],
         remoteConfig: [
           {
@@ -902,7 +902,7 @@ export default {
       window.open(url + this.customSubUrl);
     },
     gotovideo() {
-    this.$alert("别忘了关注友善的肥羊哦！",{
+    this.$alert("别忘了关注友善的大锤哦！",{
 	type: "warning",
 	confirmButtonText: '确定',
 	customClass: 'msgbox',
