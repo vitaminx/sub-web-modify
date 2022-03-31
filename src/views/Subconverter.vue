@@ -9,7 +9,7 @@
           <svg-icon class="bilibili" icon-class="bilibili" style="float:right;margin-left:10px" @click="gotoBiliBili" />
           <svg-icon class="youguan" icon-class="youtube" style="float:right;margin-left:10px" @click="gotoYouTuBe" />
           <svg-icon class="channel" icon-class="telegram" style="float:right;margin-left: 10px" @click="gotoTgChannel" />
-          <div style="text-align:center;font-size:15px">大 锤 订 阅 转 换</div>
+          <div style="text-align:center;font-size:15px">OneKing 订 阅 转 换</div>
           </div>
           
           <el-container>
@@ -306,14 +306,14 @@ export default {
           "自动判断客户端": "auto",
         },
         shortTypes: {
-         "大锤短链接":"https://x-go.gq/short",
+         "OneKing短链接":"https://links.ecgcc.cc/short",
          "d1.mk":"https://d1.mk/short",
          "dlj.tf":"https://dlj.tf/short",
          "suo.yt":"https://suo.yt/short",
          "v1.mk":"https://v1.mk/short",
         },
         customBackend: {
-          "大锤后端": "https://suc.x-clash.gq/sub?",
+          "OneKing后端": "https://suc.ecgcc.cc/sub?",
           "sub-web作者提供": "https://api.wcc.best/sub?",
           "nameless13提供":"https://www.nameless13.com/sub?",
           "subconverter作者提供":"https://subcon.dlj.tf/sub?",
@@ -321,7 +321,7 @@ export default {
           "肥羊增强型后端【负载均衡】":"https://api.v1.mk/sub?",
         },
         backendOptions: [
-          { value: "https://suc.x-clash.gq/sub?" },
+          { value: "https://suc.ecgcc.cc/sub?" },
           { value: "https://api.wcc.best/sub?" },
           { value: "https://www.nameless13.com/sub?" },
           { value: "https://sub.xeton.dev/sub?" },
@@ -744,8 +744,8 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "",
-        customBackend: "https://suc.x-clash.gq/sub?",
-        shortType: "https://x-go.gq/short",
+        customBackend: "https://suc.ecgcc.cc/sub?",
+        shortType: "https://links.ecgcc.cc/short",
         remoteConfig: "https://raw.githubusercontent.com/Meilieage/webcdn/main/rule/Area_Media_NoAuto.ini",
         excludeRemarks: "",
         includeRemarks: "",
