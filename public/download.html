@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
     <title>各平台代理工具集合</title>
     <link rel="stylesheet" href="https://cdn.staticfile.org/bootstrap/4.6.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/layui/2.7.5/layui.min.js"></script>
 </head>
 <body>
 <p></p>
@@ -33,41 +34,6 @@
         还有，夜间或锁屏后系统也会请求网络，比如后台刷新、系统服务等等，只要有请求网络就会经过代理应用，所以在「设置-电池」处看到代理应用在后台也会运行。<br/>
         网络流量也是如此的。</p>
 </div>
-<script>
-    getCode();
 
-    function getCode() {
-        var httpRequest;
-        makeRequest();
-
-        function makeRequest() {
-            httpRequest = new XMLHttpRequest();
-            if (!httpRequest) {
-                alert("Giving up :( Cannot create an XMLHTTP instance");
-                return false;
-            }
-            httpRequest.onreadystatechange = alertContents;
-            httpRequest.open(
-                "GET",
-                "https://congcong0806.github.io/2018/04/20/SS/"
-            );
-            httpRequest.send();
-        }
-
-        function alertContents() {
-            if (httpRequest.readyState === XMLHttpRequest.DONE) {
-                if (httpRequest.status === 200) {
-                    var text = httpRequest.responseText;
-                    var newText = text.match(/<h5 id="ios-客户端-全区可下载包括中区">[\s\S]*\n<h5 id="tv">/g);
-                    var nextText = newText[0].replaceAll(/shadowrocket.store/ig, 'fk.myue.club');
-                    var finalText = nextText.replaceAll(/https:\/\/github.com\/KOP-XIAO\/Clash-Merlin\/wiki/ig, 'https://t.me/merlinclashfile')
-                    document.getElementById("code").innerHTML = finalText;
-                } else {
-                    alert("There was a problem with the request.");
-                }
-            }
-        }
-    }
-</script>
 </body>
 </html>
